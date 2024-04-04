@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+    margin-top: 10%;
+}
+
+.image-item {
+    text-align: center;
+    border: 1px solid #ccc; /* Add an outline around each image item */
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}

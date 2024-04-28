@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment 9.3">
+    <meta name="keywords" content="HTML, CSS, CSD 340">
+    <meta name="author" content="Romany">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var firstVariableValue = "magic";
+        var secondVariableValue = "hearts";
+        var thirdVariableValue = "magic";
+        var fourthVariableValue = "moonlit";
+    </script>
+</head>
+
+<body>
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    <p>From "Practical Magic" by Alice Hoffman:</p>
+    <p>There is a <span id="magic1">_________</span> world we cannot see,</p>
+    <p>but we can feel it in our <span id="hearts">_________</span>.</p>
+    <p>It is the <span id="magic2">_________</span> that speaks of <span id="moonlit">_________</span> nights,</p>
+    <p>of a tiny green island in a sea of black,</p>
+    <p>of owls that watch over us while we sleep.</p>
+    <p>It is a world where all is possible,</p>
+    <p>where dreams and wishes and love are real.</p>
+    <p>It is the world of magic, and it is within us all.</p>
+    <button type="button" onclick="document.getElementById('magic1').innerHTML = firstVariableValue">magic</button>
+    <button type="button" onclick="document.getElementById('hearts').innerHTML = secondVariableValue">hearts</button>
+    <button type="button" onclick="document.getElementById('magic2').innerHTML = thirdVariableValue">magic</button>
+    <button type="button" onclick="document.getElementById('moonlit').innerHTML = fourthVariableValue">moonlit</button>
+</body>
+</html>

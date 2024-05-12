@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>CSD 340 Web Development with HTML and CSS</title>
+<style>
+body {
+  background-color: lightblue;
+  color: black;
+}
+
+.container {
+  margin: 20px;
+}
+
+input[type="text"], input[type="button"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#display {
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Assignment 11.2: JavaScript - Part 3</h1>
+<h3>Enter items below</h3>
+<div class="container">
+  <input type="text" id="inputText">
+  <input type="button" value="Add" onclick="addElement()">
+  <input type="button" value="Delete Last Entry" onclick="deleteElement()">
+  <input type="button" value="Display" onclick="displayElements()">
+  <div id="display"></div>
+</div>
+
+<script>
+let elements = [];
+
+function addElement() {
+  let text = document.getElementById("inputText").value;
+  elements.push(text);
+  alert("Added: " + text);
+}
+
+function deleteElement() {
+  elements.pop();
+}
+
+function displayElements() {
+  let displayDiv = document.getElementById("display");
+  displayDiv.innerHTML = "";
+  elements.forEach((element, index) => {
+    let itemNumber = index + 1;
+    let itemText = itemNumber + ". " + element;
+    let newItem = document.createElement("div");
+    newItem.textContent = itemText;
+    displayDiv.appendChild(newItem);
+  });
+}
+</script>
+<footer>
+        <p><a href="https://rmanriquez13.github.io/csd-340/">Back to Landing Page</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    margin: 50px 100px;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.side-by-side {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Add space between columns */
+}
+
+.column {
+    width: 45%; /* Set width for each column */
+    padding: 10px;
+}
+
+.column h3 {
+    font-weight: 500;
+    margin-top: 0;
+}
+
+ol, ul {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-position: inside;
+}
+
+ul {
+    list-style-type: upper-roman;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#footer a {
+    float: right;
+    margin-bottom: 20px;
+}
+
+
+
+

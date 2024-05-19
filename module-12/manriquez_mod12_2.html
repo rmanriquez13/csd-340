@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="manriquez_mod12_2.css">
+    <script>
+        function displayTopToBottom() {
+            const books = [
+                "Practical Magic",
+                "Crystal Bible",
+                "Aquamarine",
+                "Anime Drawing Guide",
+                "The Rules of Magic",
+                "The Dovekeepers",
+                "Here on Earth",
+                "The Story Sisters",
+                "The Red Garden",
+                "Magic Lessons"
+            ];
+            document.getElementById('bookList').innerHTML = books.sort().join('<br>');
+        }
+
+        function displayBottomToTop() {
+            const books = [
+                "Practical Magic",
+                "Crystal Bible",
+                "Aquamarine",
+                "Anime Drawing Guide",
+                "The Rules of Magic",
+                "The Dovekeepers",
+                "Here on Earth",
+                "The Story Sisters",
+                "The Red Garden",
+                "Magic Lessons"
+            ];
+            document.getElementById('bookList').innerHTML = books.sort().reverse().join('<br>');
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        <div class="side-by-side">
+            <div class="column">
+                <h3>Top 10 Favorite Books</h3>
+                <div id="bookList">
+                    <!-- Initial list will be displayed here by default or via JavaScript -->
+                </div>
+                <button onclick="displayTopToBottom()">Top to Bottom</button>
+                <button onclick="displayBottomToTop()">Bottom to Top</button>
+            </div>
+            <div class="column">
+                <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul>
+                    <li>List Items</li>
+                    <li>Bullet Points</li>
+                    <li>Roman Numeral Format</li>
+                    <li>Numbering Styles</li>
+                    <li>You can further style with CSS</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <a href="https://rmanriquez13.github.io/csd-340/">Back to Landing Page</a>
+        </div>
+    </div>
+</body>
+</html>
